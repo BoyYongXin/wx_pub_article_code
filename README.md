@@ -2,10 +2,13 @@
 博客发文使用的代码
 1、fastapi_database_crud 
 
-（1）介绍：fastapi 数据库操作之数据库操作
+（1）介绍：
+    fastapi 数据库操作之数据库操作
+    FastApi开发三个常用知识分享
 
 （2）对应博客文章
-    https://boyyongxin.github.io/2022/03/19/fastapi%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/#more
+    https://boyyongxin.github.io/2022/03/19/fastapi数据库操作/#more
+    https://boyyongxin.github.io/2022/03/22/FastApi开发三个常用知识分享/#more
 
 
 2、locust_test_server
