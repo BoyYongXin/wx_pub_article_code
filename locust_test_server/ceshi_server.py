@@ -15,24 +15,24 @@ class PressureStart(HttpUser):
     max_wait = 500  # 最大等待时长(ms)，模拟用户在执行每个任务之间等待的最大时长
     wait_time = between(min_wait, max_wait)
     host = "http://localhost:8000"  # 访问的域名和端口
-    def on_start(self):
-        """
-         # 开始任务
-        适用于需要登录的才能访问的接口，再此先登录
-        :return:
-        """
-        print("start working ............")
-        # self.client.post("/login", json={"username": "foo", "password": "bar"})
+
+    # def on_start(self):
+    #     # login_result = self.client.post("/login", json={"username": "Tom", "password": "123456"}).text
+    #     print(" working start ............")
+    #
+    # def on_stop(self):
+    #     logout_result = self.client.post("/logout", json={"username": "Jim", "password": "456789"}).text
+    #     print(" working stop ............")
 
     @task(1)
     def region_get(self):
         header = {"Content-Type": "application/json"}
         self.client.get('/user/1', headers=header)
 
-    @task(2)
-    def region_get2(self):
-        header = {"Content-Type": "application/json"}
-        self.client.get('/user/1', headers=header)
+    # @task(2)
+    # def region_get2(self):
+    #     header = {"Content-Type": "application/json"}
+    #     self.client.get('/user/1', headers=header)
 
 
 if __name__ == '__main__':
