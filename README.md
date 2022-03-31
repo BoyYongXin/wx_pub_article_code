@@ -38,3 +38,9 @@ https://boyyongxin.github.io/2022/03/23/FastApi%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9
     FastApi开发之自定义中间件
  （2）对应博客文章
  https://boyyongxin.github.io/2022/03/30/FastApi%E5%BC%80%E5%8F%91%E4%B9%8B%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%AD%E9%97%B4%E4%BB%B6/#more
+ 
+ 6、fastapi_exception
+ （1）介绍
+    FastApi 开发之自定义异常处理
+ （2）对应博客文章
+ https://boyyongxin.github.io/2022/03/31/FastApi%E5%BC%80%E5%8F%91%E4%B9%8B%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8/#more
