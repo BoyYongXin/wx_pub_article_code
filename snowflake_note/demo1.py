@@ -32,7 +32,8 @@ SEQUENCE_MASK = -1 ^ (-1 << SEQUENCE_BITS)
 # Twitter元年时间戳
 TWEPOCH = 1288834974657
 
-logger = logging.getLogger('flask.app')
+
+# logger = logging.getLogger('flask.app')
 
 
 class IdWorker(object):
@@ -45,7 +46,7 @@ class IdWorker(object):
         初始化
         :param datacenter_id: 数据中心（机器区域）ID
         :param worker_id: 机器ID
-        :param sequence: 其实序号
+        :param sequence: 序号
         """
         # sanity check
         if worker_id > MAX_WORKER_ID or worker_id < 0:
@@ -106,5 +107,4 @@ if __name__ == '__main__':
     worker = IdWorker(1, 2, 0)
     print(worker.get_id())
     print(len(str(worker.get_id())))
-
-    print(2 ^ 64)
+    print(2 ^ 10)
